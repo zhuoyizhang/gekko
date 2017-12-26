@@ -112,6 +112,19 @@ config.RSI = {
   }
 };
 
+// RSI_test settings:
+config.RSI_test = {
+  interval: 14,
+  thresholds: {
+    low: 30,
+    high: 70,
+    // How many candle intervals should a trend persist
+    // before we consider it real?
+    persistence: 1
+  }
+};
+
+
 // TSI settings:
 config.TSI = {
   short: 13,
